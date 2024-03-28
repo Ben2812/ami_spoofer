@@ -24,3 +24,9 @@ AMIDEWINx64.EXE /CA %random%5-%random%5-%random%5
 AMIDEWINx64.EXE /CO %random%5-%random%5-%random%5
 AMIDEWINx64.EXE /CSK %random%5-%random%5-%random%5
 AMIDEWINx64.EXE /SK %random%5-%random%5-%random%5
+
+net stop winmgmt /y
+net start winmgmt /y
+sc stop winmgmt
+sc start winmgmt
+ipconfig /flushdns
